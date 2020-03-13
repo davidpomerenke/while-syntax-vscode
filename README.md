@@ -1,9 +1,8 @@
 # WHILE Syntax Highlighting for VS Code
 
-![[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=davidpomerenke.while-syntax)](https://vsmarketplacebadge.apphb.com/version/davidpomerenke.while-syntax.svg)
-![[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=davidpomerenke.while-syntax)](https://vsmarketplacebadge.apphb.com/installs/davidpomerenke.while-syntax.svg)
-![[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=davidpomerenke.while-syntax)](https://vsmarketplacebadge.apphb.com/trending-monthly/davidpomerenke.while-syntax.svg)
-![[Rating](https://marketplace.visualstudio.com/items?itemName=davidpomerenke.while-syntax&ssr=false#review-details)](https://vsmarketplacebadge.apphb.com/rating-star/davidpomerenke.while-syntax.svg)
+[![VS Code Marketplace](https://vsmarketplacebadge.apphb.com/version/davidpomerenke.while-syntax.svg)](https://marketplace.visualstudio.com/items?itemName=davidpomerenke.while-syntax)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/davidpomerenke.while-syntax.svg)](https://marketplace.visualstudio.com/items?itemName=davidpomerenke.while-syntax)
+[![Rating](https://vsmarketplacebadge.apphb.com/rating-star/davidpomerenke.while-syntax.svg)]((https://marketplace.visualstudio.com/items?itemName=davidpomerenke.while-syntax&ssr=false#review-details))
 
 A [VS Code](https://code.visualstudio.com/) syntax highlighter for the [extended WHILE language](https://github.com/alexj136/HWhile "The hWHILE interpreter"), as used in the [Limits of Computation](https://www.sussex.ac.uk/study/modules/undergraduate/2020/G5029-limits-of-computation "About the module") module at the University of Sussex.
 
