@@ -1,0 +1,44 @@
+(* reference.while
+   
+   Reference for highlighting
+   Bernhard Reus 15.2.2020
+*)
+
+reference read X {
+                    //comment
+  X:= <pred> X;
+  Y:= tl 23;
+  Z:= [@while,[@var,0],[]];
+  Z:= (X=Y);
+  if Z {
+         A := [12,X,Y]
+  }
+  else { Z := nil
+  };
+ Z:= hd Z;
+ Z:= cons 3 cons true Z;
+ Z:= cons hd hd hd X cons Y nil;
+
+  switch hd Z {
+      case @doHd:   A:= true
+      case @doTl:   A:= false
+      case @doCons:  A := cons (cons A nil) (tl tl A)
+      case @doAsgn:  X := hd tl A
+      case @dowhile: if (hd Z) = A
+                           {  Z := 0
+                              B:= hd tl tl A;
+                              B := <reverse> cons Z B; // reverse comment
+                              while B
+                                 {
+                                 }
+                           } else
+                           {  A := 3545875847
+                           }
+
+      case @doIf: A := [1,2,3]
+      case @:= : Z:= [true,true,<nil.nil>,@doHd]
+      default : Z:= [cons nil 3,true,false,42]
+     }; // end switch
+  A := [<nil.nil>, <nil.<nil.nil>>,nil]
+}
+write Z

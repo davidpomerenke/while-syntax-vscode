@@ -1,40 +1,56 @@
-# **WHILE Syntax Highlighter**
+# WHILE Syntax Highlighting for VS Code
 
-A Sublime Text syntax highlighter for the extended WHILE language, as used in the [Limits of Computation](https://www.sussex.ac.uk/study/modules/undergraduate/2020/G5029-limits-of-computation "About the module") module at the University of Sussex.
+![[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=davidpomerenke.while-syntax)](https://vsmarketplacebadge.apphb.com/version/davidpomerenke.while-syntax.svg)
+![[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=davidpomerenke.while-syntax)](https://vsmarketplacebadge.apphb.com/installs/davidpomerenke.while-syntax.svg)
+![[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=davidpomerenke.while-syntax)](https://vsmarketplacebadge.apphb.com/trending-monthly/davidpomerenke.while-syntax.svg)
+![[Rating](https://marketplace.visualstudio.com/items?itemName=davidpomerenke.while-syntax&ssr=false#review-details)](https://vsmarketplacebadge.apphb.com/rating-star/davidpomerenke.while-syntax.svg)
 
-**Authors:** Toby Dennison; Bernhard Reus.
+A [VS Code](https://code.visualstudio.com/) syntax highlighter for the [extended WHILE language](https://github.com/alexj136/HWhile "The hWHILE interpreter"), as used in the [Limits of Computation](https://www.sussex.ac.uk/study/modules/undergraduate/2020/G5029-limits-of-computation "About the module") module at the University of Sussex.
 
-Many thanks to Bernhard for reviewing the highlighter's syntax coverage and the suitability of the colours used.
+Uses the same colours as the [Sublime plugin](https://github.com/z5229221/WHILE-Syntax-Highlighter), by which it was inspired.
 
-If you spot any errors, please let us know.
+Consists of two parts:
 
-**Tip for Speedy WHILE Programming:** Download Sublime packages [Terminus](https://packagecontrol.io/packages/Terminus "Get Terminus") and [Origami](https://packagecontrol.io/packages/Origami "Get Origami") to open a terminal window *inside of* Sublime and position it where you like, respectively.
+- A syntax in the TextMate/JSON format. This enables existing themes, such as the default themes, to make sense of the language.
 
-**Note:** The highlighter was not made for **Visual Studio Code** as it involves a bit more work than Sublime. If anyone wants to have a go at making a VS Code version, please let Bernhard know.
+- Two custom themes for the WHILE language grammar. They are much cooler than the colours from the default themes, but they only support highlighting of `.while` files. There is an [extension](https://marketplace.visualstudio.com/items?itemName=jsaulou.theme-by-language) to solve this problem and select the theme according to the current file extension, but I have not tried it. Manually needing to switch the theme when working with WHILE is not the end of the world.
 
-# Preview
-<img src="images/WHILE-Highlighting-Preview.png" alt="Syntax highlighter preview." height="60%" width="60%">
+## Preview
+![Preview of dark theme.](img/highlighting-dark.png) ![Preview of light theme.](img/highlighting-light.png)
 
-# Installation (Windows/Mac/Linux)
+## Installation
+1. Select the `Extensions` button in the sidebar.
 
-1. Move the two files (WHILE.sublime-syntax, WHILE.sublime-color-scheme) to the appropriate directory, where "```YOUR USERNAME```" is to be replaced.
+![Screenshot.](img/guide-1.png)
 
-    **Windows:**<br>
-    ```C:\Users\YOUR USERNAME\AppData\Roaming\Sublime Text 3\Packages\User```
+2. Search for `while-syntax` and install the extension.
 
-    **Mac/Linux:**<br>
-    ```/Users/YOUR USERNAME/Library/Application Support/Sublime Text 3/Packages/User```
+![Screenshot.](img/guide-2.png)
 
-2. Open a ```.while``` program in Sublime Text.
+3. Select the `Settings` button in the lower sidebar.
 
-3. Click on the file format label in the bottom-right corner.<br><br>
-<img src="images/step-3.jpg" alt="Click file format label." height="50%" width="40%">
+![Screenshot.](img/guide-3.png)
 
-4. Scroll down the list of formats and select ‘WHILE Language (Limits)’.<br><br>
-<img src="images/step-4.jpg" alt="Change file format." height="50%" width="40%">
+4. Select the `While Unlimited Light` or `While Unlimited Dark` theme in the list.
 
-5. Change the colour scheme by navigating to ‘Preferences’ > ‘Color Scheme’.<br><br>
-<img src="images/step-5.jpg" alt="Navigate to Color Scheme." height="50%" width="50%">
+![Screenshot.](img/guide-4.png)
 
-6. Select ‘WHILE’ from the list of colour schemes.<br><br>
-<img src="images/step-6.jpg" alt="Change the colour scheme." height="50%" width="50%">
+## Contributing
+All kinds of contributions are very welcome! :)
+
+## Development
+
+### Debugging
+Clone this repository, open it in VS Code, and press `F5` to open a new VS Code window where all your changes are applied. Colour changes are live-updated automatically, and with `Ctrl` `Shift` `F5` you can reload the debugging window to apply grammar changes. 
+
+Press `F1` and search for `Developer: Inspect Editor Tokens and Scope` to see how the grammar tokenizes each word.
+
+![Debugging screenshot.](img/debugging.png)
+
+### Resources
+- [VS Code syntax highlighting guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
+- Scope naming:
+  - [Naming conventions for scopes in TextMate grammars](https://macromates.com/manual/en/language_grammars)
+  - [Scope naming in Sublime](https://www.sublimetext.com/docs/3/scope_naming.html)
+- [Onigurama Regex](https://github.com/kkos/oniguruma/blob/master/doc/RE)
+- [Publishing VS Code extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)

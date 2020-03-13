@@ -1,0 +1,53 @@
+{
+    "name": "while-syntax",
+    "displayName": "while-syntax",
+    "description": "Syntax highlighting for the WHILE programming language.",
+    "author": "David Pomerenke",
+    "publisher": "davidpomerenke",
+    "license": "ISC",
+    "repository": {
+        "url": "https://github.com/davidpomerenke/while-syntax-vscode"
+    },
+    "version": "1.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Themes"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "while",
+                "aliases": [
+                    "WHILE",
+                    "while"
+                ],
+                "extensions": [
+                    ".while"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "while",
+                "scopeName": "source.while",
+                "path": "./syntaxes/while.tmLanguage.json"
+            }
+        ],
+        "themes": [
+            {
+                "label": "WHILE Unlimited Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/WHILE Unlimited Dark-color-theme.json"
+            },
+            {
+                "label": "WHILE Unlimited Light",
+                "uiTheme": "vs",
+                "path": "./themes/WHILE Unlimited Light-color-theme.json"
+            }
+        ]
+    }
+}

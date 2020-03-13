@@ -1,0 +1,24 @@
+{
+	"name": "WHILE Unlimited Light",
+	"include": "./WHILE Unlimited Dark-color-theme.json",
+	"tokenColors": [
+		{
+			"scope": "keyword.operator.assignment",
+			"settings": {
+				"foreground": "#d3b300"
+			}
+		},
+		{
+			"scope": "constant.language.boolean",
+			"settings": {
+				"foreground": "#8f5800"
+			}
+		},
+		{
+			"scope": "keyword.operator.logical",
+			"settings": {
+				"foreground": "#90b800"
+			}
+		}
+	]
+}

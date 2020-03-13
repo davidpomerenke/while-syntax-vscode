@@ -1,0 +1,80 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "WHILE",
+	"patterns": [
+		{
+			"name": "keyword.operator.expression",
+			"match": "\\b(cons|hd|tl)\\b"
+		},
+		{
+			"name": "keyword.control.conditional",
+			"match": "\\b(if|else)\\b"
+		},
+		{
+			"name": "keyword.control.loop",
+			"match": "\\bwhile\\b"
+		},
+		{
+			"name": "keyword.control",
+			"match": "\\b(read|write)\\b"
+		},
+		{
+			"name": "keyword.operator.assignment",
+			"match": ":="
+		},
+		{
+			"name": "comment.double-slash",
+			"match": "//[^\n]*"
+		},
+		{
+			"name": "comment.block",
+			"begin": "\\(\\*",
+			"end": "\\*\\)"
+		},
+		{
+			"name": "constant.numeric",
+			"match": "\\b(-)?[0-9.]+\\b"
+		},
+		{
+			"name": "constant.language.boolean",
+			"match": "\\b(true|false)\\b"
+		},
+		{
+			"name": "keyword.operator.logical",
+			"match": "="
+		},
+		{
+			"name": "entity.name.function",
+			"match": "<\\w*>"
+		},
+		{
+			"name": "constant.language.null",
+			"match": "\\bnil\\b"
+		},
+		{
+			"name": "keyword.control.switch",
+			"match": "\\b(switch|case|default)\\b"
+		},
+		{
+			"name": "constant.language",
+			"match": "@(\\w*|:=)\\b"
+		},
+		{
+			"name": "punctuation.separator",
+			"match": ",|\\."
+		},
+		{
+			"name": "punctuation.terminator",
+			"match": ";"
+		},
+		{
+			"name": "punctuation.definition.tag",
+			"match": "<|>"
+		},
+		{
+			"name": "entity.name.section",
+			"match": "\\w+(?= +read)"
+		}
+	],
+	"scopeName": "source.while"
+}
