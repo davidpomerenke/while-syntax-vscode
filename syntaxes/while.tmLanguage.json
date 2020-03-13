@@ -57,7 +57,7 @@
 		},
 		{
 			"name": "constant.language",
-			"match": "@(\\w*|:=)\\b"
+			"match": "@:=|@\\w*"
 		},
 		{
 			"name": "punctuation.separator",
