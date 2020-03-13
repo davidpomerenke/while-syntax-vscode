@@ -15,7 +15,7 @@ Consists of two parts:
 - Two custom themes for the WHILE language grammar. They are much cooler than the colours from the default themes, but they only support highlighting of `.while` files. There is an [extension](https://marketplace.visualstudio.com/items?itemName=jsaulou.theme-by-language) to solve this problem and select the theme according to the current file extension, but I have not tried it. Manually needing to switch the theme when working with WHILE is not the end of the world.
 
 ## Preview
-![Preview of dark theme.](img/highlighting-dark.png) ![Preview of light theme.](img/highlighting-light.png)
+![Preview of dark and light theme.](img/highlighting.png)
 
 ## Installation
 1. Select the `Extensions` button in the sidebar.
