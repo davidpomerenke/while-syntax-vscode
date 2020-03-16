@@ -12,7 +12,7 @@ Consists of two parts:
 
 - A syntax in the TextMate/JSON format. This enables existing themes, such as the default themes, to make sense of the language.
 
-- Two custom themes for the WHILE language grammar. They are much cooler than the colours from the default themes, but they only support highlighting of `.while` files. There is an [extension](https://marketplace.visualstudio.com/items?itemName=jsaulou.theme-by-language) to solve this problem and select the theme according to the current file extension, but I have not tried it. Manually needing to switch the theme when working with WHILE is not the end of the world.
+- Two custom themes for the WHILE language grammar. They are much cooler than the colours from the default themes, but they only support highlighting of `.while` files. [_Theme by Language_](https://marketplace.visualstudio.com/items?itemName=jsaulou.theme-by-language) is a nice and simple extension which solves this problem and selects the theme according to the current file extension. Otherwise you will need to switch the theme manually whenever you are working with WHILE.
 
 ## Preview
 ![Preview of dark and light theme.](img/highlighting.png)
