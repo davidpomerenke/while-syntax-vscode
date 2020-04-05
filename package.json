@@ -49,5 +49,11 @@
                 "path": "./themes/WHILE Unlimited Light-color-theme.json"
             }
         ]
+    },
+    "scripts": {
+        "publish": "npx vsce package && npx vsce publish"
+    },
+    "devDependencies": {
+        "vsce": "^1.75.0"
     }
 }
